@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+html {
+margin: -10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+.top {
+ margin-top: -60px;
+  width: 100vw;
+}
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+nav ul {
+
+  list-style-type: none;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b8c2b89f;
+  top: 0;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav i a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #94BD4A;
+}
+
+.jumbotron {
+  background: #b8c2b8;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.jumbotron .btn-primary {
+  background: #845ac7;
+  border-color: #845ac7;
+}
+
+.jumbotron .btn-primary:hover {
+  background: #7646c1;
+}
+
+.jumbotron p {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em;
+}
+
+.navbar + .jumbotron {
+  margin-top: -20px;
+}
+
+.jumbotron .lang-logo {
+  display: block;
+  background: #b01302;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid white;
+}
+.jumbotron .lang-logo img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header %>
+</head>
+
+<body>
+  <% include ../includes/nav %>
+  
+<img class="top" src="/images/river-top-01.png">
+
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>
+          <%= title %>
+        </h1>
+        <audio controls>
+          <source src="/public/Audio/AllEp1.mp3" type="audio/ogg">
+          <source src="/public/Audio/AllEp1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <a href="feed.xml"> xml feed
+          
+        </a>
+      </div>
+    </div>
+    <img class="top" src="/images/river-bottom.png"  style="width: 100vw;">
+</body>
+
+</html>

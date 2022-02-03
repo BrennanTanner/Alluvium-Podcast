@@ -1,0 +1,31 @@
+{
+  "name": "alluvium-podcast",
+  "version": "1.0.0",
+  "description": "alluvium podcast website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrennanTanner/Alluvium-Podcast.git"
+  },
+  "author": "Brennan Tanner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrennanTanner/Alluvium-Podcast/issues"
+  },
+  "homepage": "https://github.com/BrennanTanner/Alluvium-Podcast#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^2.5.6",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "rss": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

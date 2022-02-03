@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>
+<![CDATA[ The Alluvium Podcast ]]>
+</title>
+<link>https://alluviumpodcast.com</link>
+<description>
+<![CDATA[ 𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ]]>
+</description>
+<language>en</language>
+<copyright>
+<![CDATA[ Brennan Tanner 2022 ]]>
+</copyright>
+<itunes:image href="/public/images/cover.png"/>
+<image>
+<url>/public/images/cover.png</url>
+<title>The Alluvium Podcast</title>
+<link>https://alluviumpodcast.com</link>
+</image>
+<itunes:summary>
+<![CDATA[ 𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ]]>
+</itunes:summary>
+<podcast:locked owner="brennanplayswow@gmail.com">Yes</podcast:locked>
+<itunes:author>Alluvium Podcast</itunes:author>
+<itunes:owner>
+<itunes:name>Alluvium Podcast</itunes:name>
+<itunes:email>brennanplayswow@gmail.com</itunes:email>
+</itunes:owner>
+<itunes:explicit>no</itunes:explicit>
+<itunes:type>episodic</itunes:type>
+<itunes:category text="Comedy"/>
+<item>
+<title>
+<![CDATA[ Barely Legal Teenaged Turtles ]]>
+</title>
+<itunes:title>
+<![CDATA[ Barely Legal Teenaged Turtles ]]>
+</itunes:title>
+<itunes:summary>The boys unpack their favorite cartoons in this one.</itunes:summary>
+<description>
+<![CDATA[ <p>The boys unpack their favorite cartoons in this one.</p> ]]>
+</description>
+<link>https://alluviumpodcast.com</link>
+<enclosure url="/public/Audio/AllEp1.mp3" length="81772017" type="audio/mpeg"/>
+<guid isPermaLink="false">e6b5ef03-5a8a-4e0b-8b79-b4cfbc2805c6</guid>
+<itunes:image href="/public/images/cover.png"/>
+<itunes:duration>4871</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:episode>1</itunes:episode>
+<itunes:season>1</itunes:season>
+<itunes:explicit>no</itunes:explicit>
+<pubDate>Wed, 26 Jan 2022 22:55:23 GMT</pubDate>
+</item>
+<item>
+<title>
+<![CDATA[ Captain Controversial Crunch ]]>
+</title>
+<itunes:title>
+<![CDATA[ Captain Controversial Crunch ]]>
+</itunes:title>
+<itunes:summary>Grab some milk, because the boys unpack their spiciest controversial opinions in this one.</itunes:summary>
+<description>
+<![CDATA[ <p>Grab some milk, because the boys unpack their spiciest controversial opinions in this one.</p> ]]>
+</description>
+<link>https://alluviumpodcast.com</link>
+<enclosure url="/public/Audio/AllEp2.mp3" length="93474163" type="audio/mpeg"/>
+<guid isPermaLink="false">e6b5ef03-5a8a-4e0b-8b79-b4cfbc2805c6</guid>
+<itunes:image href="/public/images/cover.png"/>
+<itunes:duration>5256</itunes:duration>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:episode>2</itunes:episode>
+<itunes:season>1</itunes:season>
+<itunes:explicit>no</itunes:explicit>
+<pubDate>Wed, 02 feb 2022 08:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
