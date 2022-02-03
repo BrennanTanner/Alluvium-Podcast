@@ -75,7 +75,7 @@ feed.item({
    description: 'Grab some milk, because the boys unpack their spiciest controversial opinions in this one.',
    url: 'https://alluviumpodcast.com/episode2', // link to the item
    categories: ['Comedy'], // optional - array of item categories
-   date: 'Wed, 26 Jan 2022 22:55:23 GMT', // any format that js Date can parse.
+   date: 'Wed, 02 feb 2022 08:00:00 GMT', // any format that js Date can parse.
    enclosure: {url:'http://www.alluviumpodcast.com/Audio/AllEp2.mp3',
    'size' : 93474163, //
    'type' : 'audio/mpeg' }, // optional enclosure
