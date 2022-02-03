@@ -18,7 +18,7 @@ var feed = new RSS({
    description: '𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ',
    feed_url: 'https://alluviumpodcast.com/rss.xml',
    site_url: 'https://alluviumpodcast.com',
-   image_url: 'https://alluviumpodcast.com//public/images/cover.png',
+   image_url: 'https://alluviumpodcast.com/images/cover.png',
    copyright: 'Brennan Tanner 2022',
    language: 'en',
    categories: ['Comedy'],
@@ -38,7 +38,7 @@ var feed = new RSS({
       {'itunes:type': 'episodic'},
      {'itunes:image': {
        _attr: {
-         href:  'https://alluviumpodcast.com/public/images/cover.png'
+         href:  'https://alluviumpodcast.com/images/cover.png'
        }
      }},
      {'itunes:category': [
@@ -56,14 +56,14 @@ feed.item({
    url: 'https://alluviumpodcast.com/episode1', // link to the item
    categories: ['Comedy'], // optional - array of item categories
    date: 'Wed, 26 Jan 2022 22:55:23 GMT', // any format that js Date can parse.
-   enclosure: {url:'https://alluviumpodcast.com/public/Audio/AllEp2.mp3',
+   enclosure: {url:'https://alluviumpodcast.com/Audio/AllEp2.mp3',
    'size' : 93474163, //
    'type' : 'audio/mpeg' }, // optional enclosure
    custom_elements: [
      {'itunes:author': ''},
      {'itunes:image': {
        _attr: {
-         href: 'https://alluviumpodcast.com/public/images/cover.png'
+         href: 'https://alluviumpodcast.com/images/cover.png'
        }
      }},
      {'itunes:duration': '1:21:10'}
