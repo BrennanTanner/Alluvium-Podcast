@@ -16,9 +16,9 @@ const feedRoutes = require("./routes/feed");
 var feed = new RSS({
    title: ' The Alluvium Podcast ',
    description: '𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ',
-   feed_url: 'https://alluviumpodcast.com/rss.xml',
-   site_url: 'https://alluviumpodcast.com',
-   image_url: 'https://alluviumpodcast.com/images/cover.png',
+   feed_url: 'http://www.alluviumpodcast.com/rss.xml',
+   site_url: 'http://www.alluviumpodcast.com',
+   image_url: 'http://www.alluviumpodcast.com/images/cover.png',
    copyright: 'Brennan Tanner 2022',
    language: 'en',
    categories: ['Comedy'],
@@ -38,7 +38,7 @@ var feed = new RSS({
       {'itunes:type': 'episodic'},
      {'itunes:image': {
        _attr: {
-         href:  'https://alluviumpodcast.com/images/cover.png'
+         href:  'http://www.alluviumpodcast.com/images/cover.png'
        }
      }},
      {'itunes:category': [
@@ -56,17 +56,37 @@ feed.item({
    url: 'https://alluviumpodcast.com/episode1', // link to the item
    categories: ['Comedy'], // optional - array of item categories
    date: 'Wed, 26 Jan 2022 22:55:23 GMT', // any format that js Date can parse.
-   enclosure: {url:'https://alluviumpodcast.com/Audio/AllEp2.mp3',
+   enclosure: {url:'http://www.alluviumpodcast.com/Audio/AllEp1.mp3',
+   'size' : 81772017, //
+   'type' : 'audio/mpeg' }, // optional enclosure
+   custom_elements: [
+     {'itunes:author': ''},
+     {'itunes:image': {
+       _attr: {
+         href: 'http://www.alluviumpodcast.com/images/cover.png'
+       }
+     }},
+     {'itunes:duration': '1:21:10'}
+   ]
+});
+
+feed.item({
+   title:  ' Captain Controversial Crunch ',
+   description: 'Grab some milk, because the boys unpack their spiciest controversial opinions in this one.',
+   url: 'https://alluviumpodcast.com/episode2', // link to the item
+   categories: ['Comedy'], // optional - array of item categories
+   date: 'Wed, 26 Jan 2022 22:55:23 GMT', // any format that js Date can parse.
+   enclosure: {url:'http://www.alluviumpodcast.com/Audio/AllEp2.mp3',
    'size' : 93474163, //
    'type' : 'audio/mpeg' }, // optional enclosure
    custom_elements: [
      {'itunes:author': ''},
      {'itunes:image': {
        _attr: {
-         href: 'https://alluviumpodcast.com/images/cover.png'
+         href: 'http://www.alluviumpodcast.com/images/cover.png'
        }
      }},
-     {'itunes:duration': '1:21:10'}
+     {'itunes:duration': '1:27:36'}
    ]
 });
 
