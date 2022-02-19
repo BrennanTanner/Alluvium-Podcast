@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
   res.render('pages/feed.xml', {
     title: 'RSS feed',
-    path: '/feed.xml', // For pug, EJS
+    path: '/feed.xml', 
   });
 });
 
