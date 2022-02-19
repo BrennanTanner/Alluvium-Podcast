@@ -21,9 +21,9 @@ const url = "https://archive.org/metadata/@alluviumpodcast";
 global.feed = new RSS({
    title: ' The Alluvium Podcast ',
    description: '𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ',
-   feed_url: 'http://www.alluviumpodcast.com/rss.xml',
+   feed_url: 'http://www.alluviumpodcast.com/feed.xml',
    site_url: 'http://www.alluviumpodcast.com',
-   image_url: 'http://www.alluviumpodcast.com/images/cover.png',
+   image_url: 'https://archive.org/details/alluvium-s01-ep01/cover.jpg',
    copyright: 'Brennan Tanner 2022',
    language: 'en',
    categories: ['Comedy'],
