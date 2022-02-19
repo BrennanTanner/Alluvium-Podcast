@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const RSS = require('rss');
 var request = require("request");
+const date = require('date-and-time');
+
 
 const PORT = process.env.PORT || 5000; // So we can run on heroku || (OR) localhost:5000
 
@@ -11,6 +13,7 @@ const app = express();
 
 // Route setup. You can implement more in the future!
 const feedRoutes = require("./routes/feed");
+const { Console } = require("console");
 
 const url = "https://archive.org/metadata/@alluviumpodcast";
 
@@ -62,8 +65,9 @@ async function getItem(body2, i){
       fileName = body2.files[x].name;
       fileSize = body2.files[x].size;
       fileSize = body2.files[x].length * 100;
+      filedate = date.parse(body2.metadata.date, 'YYYY-MM-DD');
+      filedate = date.format(filedate, 'ddd, MMM DD YYYY')
     }
-    
   }
   //console.log('https://' + body2.d1 + body2.dir + '/cover.jpg');
   feed.item({
@@ -71,7 +75,7 @@ async function getItem(body2, i){
     description: body2.metadata.description,
     url: 'https://archive.org/details/alluvium-s01-ep0' + i, // link to the item
     categories: body2.metadata.subject, // optional - array of item categories
-    date: body2.metadata.subject +' 06:00:00 GMT', // any format that js Date can parse.
+    date: filedate +' 06:00:00 GMT', // any format that js Date can parse.
     enclosure: {url:'https://' + body2.d1 + body2.dir + '/' + fileName,
     'size' : fileSize, //
     'type' : 'audio/mpeg' }, // optional enclosure
