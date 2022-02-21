@@ -14,6 +14,7 @@ const app = express();
 // Route setup. You can implement more in the future!
 const feedRoutes = require("./routes/feed");
 const { Console } = require("console");
+const { exit } = require("process");
 
 const url = "https://archive.org/metadata/@alluviumpodcast";
 
@@ -60,7 +61,7 @@ async function getItem(body2, i){
   let fileSize = '';
   let fileLength = '';
 
-  for(let x = 0; x < body2.files.length; x++) {
+  for(let x = 0; x < body2.files_count; x++) {
     if (body2.files[x].name.includes('.mp3')){
       fileName = body2.files[x].name;
       fileSize = body2.files[x].size;
@@ -69,6 +70,7 @@ async function getItem(body2, i){
       filedate = date.format(filedate, 'ddd, MMM DD YYYY')
     }
   }
+
   //console.log('https://' + body2.d1 + body2.dir + '/cover.jpg');
   feed.item({
     title:  body2.metadata.title,
@@ -97,11 +99,11 @@ async function getItem(body2, i){
   url: url,
   json: true
 },async function (error, response, body) {
-
+console.log(body.files_count);
   if (!error && response.statusCode === 200) {
-    for (let i = 0; i < body.files_count; i++) {
+    for (let i = 0; i < 4; i++) {
       let ep = i + 1; 
-     
+      
       const urls = [];
       urls[i] = "https://archive.org/metadata/alluvium-s01-ep0"+ ep;
 
@@ -112,10 +114,14 @@ async function getItem(body2, i){
         json: true
       },async function (error, response, body2) {
       
-        if (!error && response.statusCode === 200) {
-
+        console.log(body2);
+        if (body2 == null){
+          i = body2.files_count;
+        }
+        else if (!error && response.statusCode === 200) {
+console.log(urls[i]);
           itemCount = feed.items.length + 1;
-        await getItem(body2, i, body.files_count, itemCount); 
+        await getItem(body2, i); 
 
         } 
         else {console.log(error);}
@@ -152,22 +158,7 @@ app.use(express.static(path.join(__dirname, "public")))
       
         if (!error && response.statusCode === 200) {
       
-          for (let i = 0; i < body.files_count; i++) {
-            let ep = i + 1;
-            const url2 = "https://archive.org/metadata/alluvium-s01-ep0"+ ep;
-      
-            request({
-              url: url2,
-              json: true
-            }, function (error, response, body2) {
-            
-              if (!error && response.statusCode === 200) {
-               
-              } 
-              else {console.log(error);}
-            });
-           
-          }
+          
         }
         else {console.log(error);}
       
