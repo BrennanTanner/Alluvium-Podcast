@@ -100,8 +100,15 @@ async function getItem(body2, i){
   json: true
 },async function (error, response, body) {
 console.log(body.files_count);
+
+
+/*
+CHANGE THIS ONE HERE AFTER EACH NEW RELEASE
+                       |||
+                       VVV
+*/
   if (!error && response.statusCode === 200) {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       let ep = i + 1; 
       
       const urls = [];
