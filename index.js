@@ -24,7 +24,7 @@ global.feed = new RSS({
    description: '𝗔𝗹𝗹𝘂𝘃𝗶𝘂𝗺: 𝘢 𝘥𝘦𝘱𝘰𝘴𝘪𝘵 𝘰𝘧 𝘤𝘭𝘢𝘺, 𝘴𝘪𝘭𝘵, 𝘢𝘯𝘥 𝘴𝘢𝘯𝘥 𝘭𝘦𝘧𝘵 𝘣𝘺 𝘧𝘭𝘰𝘸𝘪𝘯𝘨 𝘴𝘵𝘳𝘦𝘢𝘮𝘴 𝘪𝘯 𝘢 𝘳𝘪𝘷𝘦𝘳 𝘷𝘢𝘭𝘭𝘦𝘺, 𝘵𝘺𝘱𝘪𝘤𝘢𝘭𝘭𝘺 𝘱𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘧𝘦𝘳𝘵𝘪𝘭𝘦 𝘴𝘰𝘪𝘭. Sit back and enjoy as hosts Sam and Brennan deposit their fertilizing mental clay, silt, and sand into your brain. ',
    feed_url: 'http://www.alluviumpodcast.com/feed.xml',
    site_url: 'http://www.alluviumpodcast.com',
-   image_url: 'https://archive.org/details/alluvium-s01-ep01/cover.jpg',
+   image_url: 'https://archive.org/details/alluvium-ep01/cover.jpg',
    copyright: 'Brennan Tanner 2022',
    language: 'en',
    categories: ['Comedy'],
@@ -71,11 +71,12 @@ async function getItem(body2, i){
     }
   }
 
-  //console.log('https://' + body2.d1 + body2.dir + '/cover.jpg');
+  let iplus = i + 1;
+
   feed.item({
     title:  body2.metadata.title,
     description: body2.metadata.description,
-    url: 'https://archive.org/details/alluvium-s01-ep0' + i, // link to the item
+    url: 'https://archive.org/details/alluvium-ep0' + iplus, // link to the item
     categories: body2.metadata.subject, // optional - array of item categories
     date: filedate +' 06:00:00 GMT', // any format that js Date can parse.
     enclosure: {url:'https://' + body2.d1 + body2.dir + '/' + fileName,
@@ -90,8 +91,9 @@ async function getItem(body2, i){
       }},
       {'itunes:duration': fileLength}
     ]
+    
  });
- 
+
 };
 /* loop over data and add to feed */
 
@@ -99,7 +101,6 @@ async function getItem(body2, i){
   url: url,
   json: true
 },async function (error, response, body) {
-console.log(body.files_count);
 
 
 /*
@@ -112,7 +113,7 @@ CHANGE THIS ONE HERE AFTER EACH NEW RELEASE
       let ep = i + 1; 
       
       const urls = [];
-      urls[i] = "https://archive.org/metadata/alluvium-s01-ep0"+ ep;
+      urls[i] = "https://archive.org/metadata/alluvium-ep0"+ ep;
 
       const timer = ms => new Promise(res => setTimeout(res, ms));
 
@@ -121,12 +122,12 @@ CHANGE THIS ONE HERE AFTER EACH NEW RELEASE
         json: true
       },async function (error, response, body2) {
       
-        console.log(body2);
+        //console.log(body2);
         if (body2 == null){
           i = body2.files_count;
         }
         else if (!error && response.statusCode === 200) {
-console.log(urls[i]);
+        console.log(urls[i]);
           itemCount = feed.items.length + 1;
         await getItem(body2, i); 
 
