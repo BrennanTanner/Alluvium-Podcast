@@ -134,7 +134,7 @@ CHANGE THIS ONE HERE AFTER EACH NEW RELEASE
         } 
         else {console.log(error);}
       });
-      await timer(100);
+      await timer(150);
     }
   }
   else {console.log(error);}
