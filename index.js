@@ -134,6 +134,7 @@ CHANGE THIS ONE HERE AFTER EACH NEW RELEASE
         } 
         else {console.log(error);}
       });
+      
       await timer(150);
     }
   }
